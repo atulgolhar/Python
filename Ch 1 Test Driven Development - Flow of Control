@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+#Test Driven Development - Flow of Control Check
+
+def get_int(msg):
+    while True:
+        try:
+            i = int(input(msg))
+            print("Check2: ", msg, type(msg))
+            print("Check3: ", i, type(i))
+            return i
+        except ValueError as err:
+            print("Check4", type(err), err)
+
+print("Flow of control check\n")
+age = get_int("Check1: enter your age: ")
+
+print("Check5: ", type(age), age+4)
