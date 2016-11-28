@@ -29,6 +29,7 @@ try:
         while column < len(digits):
             number = int(digits[column])
             digit = Digits[number]
+            print("Check row column", row, column)
             line += digit[row] + "  "
             column += 1
         print(line)
