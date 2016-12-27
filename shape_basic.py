@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#Shape_basic.py
+#shape_basic.py
 
 import math
 
