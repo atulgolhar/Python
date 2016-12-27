@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#ShapeAlt.py
+#shape_alt.py
 """
 This module provides the Point and Circle classes.
 
