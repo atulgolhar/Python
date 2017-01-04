@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Simple average, refactored code.
 
-print("Type integer, each followed by Enter; or just ControlD to finish.")
+print("Type integer, each followed by Enter; or ControlD to finish.")
 total = 0
 count = 0
 
