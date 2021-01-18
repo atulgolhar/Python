@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+def eachTriangle(sidelength=100):
+    for i in range(3):
+        forward(sidelength)
+        right(120)
+
+from turtle import *
+shape('turtle')
+
+eachTriangle()
