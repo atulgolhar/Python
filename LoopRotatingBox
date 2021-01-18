@@ -9,7 +9,7 @@ def eachSquare(sidelength=100):
 from turtle import *
 shape('turtle')
 
-for j in range(20):
+for j in range(75):
     speed(10)
     eachSquare()
-    right(15)
+    right(5)
