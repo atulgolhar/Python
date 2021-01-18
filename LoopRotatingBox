@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+def eachSquare():
+    for i in range(4):
+        forward(100)
+        right(90)
+        speed(10)
+
+from turtle import *
+shape('turtle')
+
+for j in range(3):
+    speed(10)
+    right(15)
+    eachSquare()
