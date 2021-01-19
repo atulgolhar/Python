@@ -13,3 +13,105 @@ for j in range(75):
     speed(10)
     eachSquare()
     right(5)
+
+    
+# Notes - additional code to play with
+
+"""
+def eachTriangle(sidelength=100):
+    for i in range(3):
+        forward(sidelength)
+        sidelength = sidelength + 5
+        right(120)
+
+from turtle import *
+shape('turtle')
+
+eachTriangle()
+"""
+
+
+"""
+def eachSquare(sidelength=100):
+    for i in range(4):
+        forward(sidelength)
+        right(90)
+        speed(10)
+
+from turtle import *
+shape('turtle')
+
+for j in range(75):
+    speed(10)
+    eachSquare()
+    right(5)
+"""
+
+
+"""
+def eachSquare():
+	for i in range(4):
+		forward(100)
+		right(90)
+		speed(10)
+
+from turtle import *
+shape('turtle')
+
+for j in range(3):
+	speed(10)
+	right(15)
+	eachSquare()
+"""
+
+
+"""
+from turtle import *
+shape('turtle')
+for i in range(4):
+	forward(100)
+	right(90)
+"""
+
+
+"""
+from turtle import *
+shape('turtle')
+for i in range(8):
+	forward(100)
+	right(45)
+
+forward(100)
+"""
+
+
+"""
+# brute force repetition
+from turtle import *
+forward(100)
+shape('turtle')
+right(45)
+
+forward(150)
+right(45)
+
+forward(150)
+right(45)
+
+forward(150)
+right(45)
+
+forward(150)
+right(45)
+
+forward(150)
+right(45)
+
+forward(150)
+right(45)
+
+forward(150)
+right(45)
+
+forward(100)
+"""
