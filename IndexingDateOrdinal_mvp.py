@@ -27,5 +27,6 @@ year_number = int(year)
 
 print("String version")
 print(month + '-' + day + '-' + year)
-print("Ordinal version")
+# need to expand code and explain this
+print("Ordinal version")            
 print(month_number, ' - ', day_number, ' - ', year_number)
