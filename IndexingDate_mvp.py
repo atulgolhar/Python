@@ -14,7 +14,7 @@ months = [
     'August',
     'September',
     'October',
-    'Novembe',
+    'November',
     'December']
 
 year = input('Year 4 digits: ')
