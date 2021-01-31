@@ -25,6 +25,7 @@ day_number = int(day)
 month_number = int(month)
 year_number = int(year)
 
+# work in progress
 endings = [] + 17 * ['th']
 
 
