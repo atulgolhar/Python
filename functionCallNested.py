@@ -3,6 +3,7 @@
 
 def goodie1():                              
 
+    print('Hi def goodie1')
     def goodie2():
         print('Hi def goodie2')
 
@@ -32,8 +33,10 @@ def goodie6():
     print('Hi def goodie6')     
     goodie7()    
 
+# goodie1()
+# goodie6()
+# print("ALL DONE then...")
 
-print('Hi def goodie1')
-goodie6()
-
-print("ALL DONE then...")
+# to run
+# temp.goodie1()
+# temp.goodie6()
