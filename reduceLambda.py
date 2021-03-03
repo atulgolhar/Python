@@ -10,3 +10,7 @@
 >>> reduce(lambda x,y: x+y, numbersB)
 15
 >>> 
+
+>>> sum(numbersB)
+15
+>>> 
