@@ -1,4 +1,6 @@
-#inside Python shell
+# exceptionsClausev1.py
+
+# use Python shell
 
 >>> try:
 	x = int(input('Enter the first number:'))
