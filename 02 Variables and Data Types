@@ -1,0 +1,10 @@
+int 0
+str 'Atul', "Hello"
+bool True, False
+float 0.32, 1.234
+
+keyboard f5 to run IDLE script
+must save py file then can run using f5
+
+name = 'Atul'
+print(name)
