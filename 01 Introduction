@@ -1,0 +1,13 @@
+IDLE pinned to desktop
+open IDLE			this is the IDLE editor, create scripts here
+press f5 gives 2nd window	this is the IDLE Shell output
+save script
+f5 to run
+
+https://docs.python.org/3.12/tutorial/index.html
+
+open tutorial1.py file from File Explorer
+
+For now use IDLE and IDLE Shell
+IDLE is the CLI
+IDLE Shell is the output console
