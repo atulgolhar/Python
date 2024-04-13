@@ -1,0 +1,25 @@
+# start at 0, runs to 9, thus runs 10 times
+# these are the same
+# iteration from 0 to 9
+
+for x in range(0, 10):
+    print(x)
+
+
+# how this works, add 1 to the iteration, print than check
+# at 10 you break out of the for loop
+	
+for x in range(0, 10, 1):		# start, stop, step
+    print(x)
+
+for x in range(0, 10, 2):		# now increase the step 
+    print(x)
+
+for x in range(0, 10, 3):		# now increase the step
+    print(x)
+
+for x in range(0, 10, 4):		# now increase the step
+    print(x)
+
+for x in range(0, 10, 5):		# now increase the step
+    print(x)
