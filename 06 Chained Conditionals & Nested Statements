@@ -1,0 +1,71 @@
+x = 2
+y = 3
+print(x == y)    # False
+
+# lets start with the AND keyword
+
+x = 2
+y = 3
+if x == y and x + y == 5:		# false and true 	yields false thus did not run
+    print("ran")
+else:
+    print("did not run")
+
+# did not run
+
+
+# now change to != and run again	# true thus ran
+x = 2
+y = 3
+if x != y and x + y == 5:
+    print("ran")
+else:
+    print("did not run")
+
+
+# now lets try the OR keyword
+# now either condition can be true so either 1st condition or 2nd condition true then print ran will run
+# thats b/c only 1 of the condition has to be true for it to run
+
+x = 2
+y = 3
+if x == y or x + y == 5:
+    print("ran")			# false or true 	yields true
+else:
+    print("did not run")
+
+
+# can add as many conditions as you like
+# so add/change code, save, then F5 to run
+
+# now we add the not keyword
+
+x = 2
+y = 3
+if not(x == y or x + y == 5):        # (false or true) yields true
+    print("ran")                     # thus not () yields false
+else:
+    print("did not run")	     # did not run
+
+
+Nested Statements
+
+x = 2
+y = 3					# x = 2, y = 3
+
+x = 2
+y = 4	now change this			# x = 2, y != 3
+
+
+x = 4	now change this as well
+y = 4					 x != 2
+
+
+same code for all three input options
+if x == 2:
+    if y == 3:
+        print('x = 2, y = 3')		
+    else:
+        print('x = 2, y != 3')
+else:
+    print('x != 2')
