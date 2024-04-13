@@ -1,0 +1,11 @@
+if condition == True:
+    do this
+
+if 1 < 2 == True:
+    print("yes 1 < 2")			# note nothing gets printed, why?
+
+if (1 < 2):
+    print("yes this is true")		# yes this is true	    
+
+if  1 < 2 :
+    print("yes this is true")		# yes this is true	    
