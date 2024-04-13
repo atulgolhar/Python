@@ -1,0 +1,9 @@
+"""
+<		less than
+>		greater than
+==		comparison operator
+!=		not equal to
+"""
+
+print(4 != 5)   // True
+print(4 == 4)   // True  
