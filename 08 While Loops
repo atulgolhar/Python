@@ -1,0 +1,58 @@
+while condition == True:
+    do this
+    break
+
+# after the do this, we ask is this condition still true? if not then next line is a break
+
+
+loop = True
+
+while loop:
+    do this
+    
+
+# example code
+
+loop = True
+
+while loop:						while loop:
+    name = input('Insert something: ')				name = input('Insert something: ')
+    if name == 'stop':						if name == 'stop':
+        loop = False							break
+					# these are the same
+
+	loop = False
+	break
+
+
+========= RESTART: C:\Users\agolh\Desktop\TutorialsPython\tutorial1.py =========
+Insert something: Hi
+Insert something: bye
+Insert something: no way
+Insert something: 
+Insert something: 
+Insert something: 
+Insert something: stop
+
+
+# explains how the break keyword actually works
+
+loop = True
+
+while loop:
+    name = input('Insert something: ')
+    if name == 'stop':
+        break
+
+
+
+# explain how and when to use a password check
+# use while when asking for password b/c dont know how many iterations it will take
+# explains break keyword
+
+loop = True
+
+while loop:
+    password = input('Password: ')
+    if password == 'stop':
+        break
