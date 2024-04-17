@@ -1,0 +1,82 @@
+# .slice operator
+
+fruits = ['apples', 'pear', 'strawberrys']	# lists
+text = 'Hello I like python'			# strings
+
+					# we can do this on lists
+print(fruits[1])			# pear
+
+					# do this on strings as well
+print(text[1])				# e
+
+text[start:stop:step] 			# works same as range function
+text[start:stop] 			# works same as range function
+text[start]	 			# works same as range function
+
+# Start feature
+print(text[0])				# H
+print(text[0:10:1])			# Hello I li
+print(text[0:50:1])			# Hello I like python
+
+# Stop feature
+print(text[0:5])			# Hello 
+					# this stops at the o in Hello
+print(text[:5])				# default start at beginning
+
+print(text[2:])				# default stops at end of the string
+
+# Step feature
+print(text[::])				# defaults start beginning, stop at end, steps by 1
+					# Hello I like python
+
+print(text[::2])			# step by 2
+print(text[::3])			# step by 3
+print(text[::4])			# step by 4
+print(text[3::3])			# start at 3, step by 3
+
+fruits = ['apples', 'pear', 'strawberrys','aronia','asam Kumbang','blackberry', 'blackcurrant','blueberry','cloudberry','cranberry','crowberry','dewberry','foxgrape','marionberry','raspberry']
+text = 'Hello I like python'
+print(fruits[3::3])			# ['aronia', 'blackcurrant', 'cranberry', 'foxgrape']
+
+# insert function 
+fruits = ['apples', 'pear', 'strawberrys','aronia','asam Kumbang','blackberry', 'blackcurrant','blueberry','cloudberry','cranberry'
+,'crowberry','dewberry','foxgrape','marionberry','raspberry']
+
+fruits.append('grape')			# adds 'grape' to end
+print(fruits[-1])			# grape
+
+fruits = ['apples', 'pear', 'strawberrys','blackberry', 'blackcurrant']
+
+fruits[0:0] = 'b'			# ['b', 'apples', 'pear', 'strawberrys', 'blackberry', 'blackcurrant']
+print(fruits)
+
+fruits[1:1] = 'b'			# ['apples', 'b', 'pear', 'strawberrys', 'blackberry', 'blackcurrant']
+print(fruits)
+
+
+
+fruits[:] = 'b'
+print(fruits)
+
+
+fruits.append('b')			# adds to end
+
+
+# .slice operator
+
+fruits = ['apples', 'pear', 'strawberrys','blackberry', 'blackcurrant']
+print(fruits.len())
+#fruits[:-2:] = 'b'
+#print(fruits)
+
+#fruits.append('b')         adds to end
+
+#fruits = ['apples', 'pear', 'strawberrys','blackberry', 'blackcurrant']
+#fruits[::] = 'b'           this overwrites prior assignment with new assignment
+
+
+# insert for slice operator
+
+fruits[2:2] = 'b'
+print(fruits)				# ['apples', 'pear', 'b', 'strawberry', 'blackberry', 'blackcurrant']
+
