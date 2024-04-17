@@ -1,0 +1,23 @@
+# method followed by the delimiter of a period followed by the method name
+
+# .strip(), len(), .lower(), .upper(), .split()
+
+# methods calls use .something
+# functions calls use () thus it takes something inside the brackets
+
+
+# removes the spaces before and after
+text = input('Input something: ')	#       hello
+print(text.strip())			# hello
+
+text = input('Input something: ')	# 12345
+print(len(text))			# 5
+
+
+print(text.lower())			# Input something: Hello LIKE THIs
+					# hello like this
+
+print(text.split())			# default is space delimiter
+					# Input something: my name is tim		['my', 'name', 'is', 'tim']
+
+print(text.split('a'))			# Input something: my name is time		['my n', 'me is time']
