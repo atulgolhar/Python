@@ -1,0 +1,53 @@
+lists are their own data type
+data types are: strings, integers, booleans, floats, and today we explore lists
+
+fruits = []			# note square brackets
+				# lists are a collection of data types
+				# can be same data type or different data types
+				# everything seperated by a comma is known as an item
+
+# we can see two different data types here
+fruits = ['apple', 'pear', 3]
+
+print(fruits)			# ['apples', 'pear', 'strawberrys']
+
+# to see the indicie of that item
+# everything is assigned an indicie, starting with 0
+
+print(fruits[0])			# apple
+
+print(fruits[1])			# pear
+
+print(fruits[2])			# 3
+
+
+
+# to add item to a list
+
+fruits.append('strawberry')
+
+
+fruits = ['apple', 'pear']
+print(fruits)				 # ['apple', 'pear']
+fruits.append('strawberry')
+fruits.append('blueberry')
+print(fruits)				 # ['apple', 'pear', 'strawberry', 'blueberry']
+
+# note another way to do using slice operator and insert (will discuss this in later tutorial)
+
+# to change the list
+
+
+Tuple
+# used for coordinates, colors, rectangles
+# can use different data types
+
+position = (2,3)
+
+fruits = ['apple', 'pear']
+position = (2,3)
+color = (255,255,255)
+
+print(type(fruits))			# <class, 'list'>
+print(type(position))			# <class, 'tuple'>
+print(type(color))			# <class, 'tuple'>
