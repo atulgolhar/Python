@@ -1,0 +1,10 @@
+# Functions
+
+def addTwo(x):
+    return x + 2
+
+def subtractTwo(parameter):
+    return parameter -2
+
+a = subtractTwo(5)
+print(a)
