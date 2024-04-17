@@ -1,0 +1,97 @@
+two main type of for loops
+we already learned for range loop = iterate using the range operation
+today its the 2nd type = iterate thru every item in a list
+
+fruits = ['apples', 'pears', 'strawberrys', 3, 8, 90]
+
+for fruit in fruits:				# iterate by item
+    print(fruit)
+
+for  x in range(0,10):				# iterate by indicie (or range or index)
+    print (x)
+
+apples
+pears
+strawberrys
+3
+8
+90
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+why is this useful? iterate by item vs iterate by indicie (or range or index)
+1) look at every item in a list and check if it is a certain value, and if its we do something
+
+
+fruits = ['apples', 'pears', 'strawberrys', 3, 8, 90]
+
+for fruit in fruits:
+    if fruit == 'pears':
+        print(fruit)
+    else:
+        print('not pears')
+
+not pears
+pears
+not pears
+not pears
+not pears
+not pears
+
+
+
+
+# now add the 2nd approach for comparison
+
+
+
+fruits = ['apples', 'pears', 'strawberrys', 3, 8, 90]
+
+for fruit in fruits:			# note dont need to know how many items in the list (happens automatically)
+    if fruit == 'pears':		# note does not need us to identify the specific index (happens automatically)
+        print(fruit)
+    else:
+        print('not pears')
+
+
+for x in range(0,6):			# note need to know how many items total in the list ie 6 and then specify it in code
+    if fruits[x] == 'pears':		# note takes longer to write b/c needs to identify the specific index
+        print(fruits[x])
+    else:
+        print('not a pear')
+
+
+for x in range(len(fruits)):		# note here dont need to know total items in the list, just use len() function
+    if fruits[x] == 'pears':
+        print(fruits[x])
+    else:
+        print('not a pear')
+
+
+
+not pears
+pears
+not pears
+not pears
+not pears
+not pears
+
+not a pear
+pears
+not a pear
+not a pear
+not a pear
+not a pear
+
+
+
+# w3 schools		The len() function returns the number of items in an object.
