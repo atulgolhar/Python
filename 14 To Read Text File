@@ -1,0 +1,118 @@
+# need to save text file in same directory folder as script
+# path joining 
+
+					# 1st way to do this
+file = open('file.txt', 'r')			
+f = file.readlines()			
+
+print(f)				# to show you
+
+
+['hello\n', 'atul\n', 'python\n', 'learning\n', 'easy\n', 'library\n', 'working\n', 'arrays\n', 'matrices']
+	
+					# note last word has \n missing
+					# end of the line
+
+NOTE: we removed last character (ie s) from that string 
+matrices vs 'matrice']
+so add if statement inside for loop
+
+file = open('file.txt', 'r')
+f = file.readlines()
+
+newList = []    # create blank list
+# need to iterate by item to remove \n
+# use slice operator to remove \n
+# remove \n using hammer
+# then need to account for not removing last character
+# remove \n using scapel
+# but now last word (easy) is missing so now we need an else statement
+
+
+file = open('file.txt', 'r')
+f = file.readlines()
+
+newList = []
+for line in f:				# 2nd way
+    newList.append(line.strip())	# 3rd way 
+
+print(newList)
+
+
+#for line in f:
+#    newList.append(line.strip())
+
+
+#for line in f:
+#    if line[-1] == '\n':
+#        newList.append(line[:-1])	# 2nd way continued
+#    else:
+#        newList.append(line)
+
+
+
+
+# Other source for tutorial
+
+
+
+https://python.land/read-text-file
+
+1 using open()
+2 using open() and close() manually
+3 using Pandas 
+4 using NumPy
+
+
+1 using open()
+
+with open ('names.txt') as f:
+    # Read contents of the file into a variable
+    names = f.read()
+
+    # Print the names
+    print(names)
+
+
+2 using open() and close() manually
+
+f = open('names.txt')
+# Read the contents of the file into a variable
+names = f.read()
+print(names)
+
+# Dont forget to close the file again
+f.close()
+
+
+3 using Pandas (for large text files use Pandas library and DataFrame object that can read/manipulate text files)
+# need to perform advanced operations on the data
+# can work using .read_csv() .read_json() .read_html()
+
+
+import pandas as pd
+
+# Read a CSV file into a DataFrame
+df = pd.read_csv('example.csv')
+
+# Read a JSON file into a DataFrame
+df = pd.read_json('example.json')
+
+# Read a CSV html into a DataFrame
+df = pd.read_html('example.html')
+
+print(df)
+
+
+
+4 using NumPy
+# NumPy library is for working with arrays and matrices of numerical data.
+# provides fuctionality for reading text files including loadtxt() and genfromtxt()
+
+# numpy.loadtxt() allows parameters that specify how data is delimited, which rows columns to skip, how to handle missing data
+
+import numpy as np
+
+# Read a CSV file into a NumPy array
+data = np.loadtxt('example.csv', delimiter=',')
+print(data)
