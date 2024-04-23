@@ -1,0 +1,62 @@
+1st create file with text hello
+need to close the file
+write to the file
+
+
+file = open'"file.txt', 'w')
+file.close()
+
+
+file = open('file.txt', 'w')
+
+file.write('pythonista')
+
+file.close()
+
+# now open txt file and it contains only that word pythonista
+# this removed the prior text by overwriting it
+# 'w' will clear the entire file and writes new text
+ 
+
+
+
+# run this
+# everything is on the same line		pythonistaI am learning how to write to a file
+
+
+file = open('file.txt', 'w')
+
+file.write('pythonista')
+file.write('I am learning how to write to a file')
+
+file.close()
+
+
+# write to a different line
+# but want this to be on different lines
+# need the escape character
+# this tells Python to move to the next line
+
+file.write('pythonista')		# old
+file.write('pythonista\n')		# new
+
+f5
+no output to screen
+so look at file.txt to see contents, now each line of text has 
+its own line b/c we used escape character
+
+pythonista
+I am learning how to write to a file
+
+
+# now we can insert \n into middle of the line to break it up
+# see screen output to verify this occurs
+
+file.write('I am learning how to write to a file')
+file.write('I am learning how to \nwrite to a file')
+
+pythonista
+I am learning how to 
+write to a file
+
+# Next tutorial, we learn how to read and write to a new file
