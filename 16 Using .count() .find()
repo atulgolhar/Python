@@ -1,0 +1,67 @@
+# .find(), .count()
+
+# .find() is specific to python
+# make variable called string and set it to whatever string we want
+
+string = ''			# add text hello and assign that to variable called string
+string = 'hello'		# we want to find the indicie of letter l
+print(string.find('l'))		# 2 	# this is b/c the first l is found at the indicie of 2
+string = 'hello'		# we have two l's in the string	 # if we change it to 'o'
+print(string.find('o'))		# 4
+				# note that this is indicie 4 of the string
+				# h e l l o
+				# 0 1 2 3 4  <-- indicies
+				# this it the 4th indicie of that string  # this is the 4th index
+print(string.find('7'))		# -1	# python does not find a 7 so it returns -1
+				# use for checking if password contains forbidden character
+# .count()			# counts how many of the characters
+print(string.count(''))		# 6 for length of string 
+string = 'abc'			# 3
+print(string.count(''))
+
+points = [1, 4, 2, 9, 7, 8, 9, 3, 1]	# this is a list with 9 elements 
+x = points.count(9)
+print(x)				# 2
+
+x = points.count(5)			# 0 (not listed in the list)
+x = points.count(4)			# 1
+x = points.count(1)			# 2
+
+
+points = [1, 4, 2, 1, 9, 7, 8, 9, 3, 1]
+x = points.count(1)
+print(x)
+
+string = 'hello'		
+print(string.count('l'))	# 2
+print(string.count('h'))	# 1
+print(string.count('e'))	# 1
+print(string.count('z'))	# 0
+
+
+string = 'helloasdfsadflsakdjfsaldfasdfsadf'
+print(string.count('a'))	# 6 	# to find other a's then need for loop 
+
+string = input('Please type something: ')
+if string.count('_') > 0:
+    print('Not good!')
+
+Please type something: wearkjsldkfj_asdf
+Not good!
+
+
+string = input('Please type something: ')
+if string.count('_') > 0:
+    print('Not good!')
+else:
+    print('good')
+
+
+Please type something: asdlkfj_
+Not good!
+
+Please type something: lsakdfj
+good
+
+Please type something: __hello
+Not good!
