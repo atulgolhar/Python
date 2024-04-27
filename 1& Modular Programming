@@ -1,0 +1,33 @@
+import
+import math
+import pygame
+import os
+
+builtin vs not builtin
+open source so you can create your own modules
+
+import math
+print(math.pi)			# 3.141592653589793
+print(math.degrees(math.pi))	# 180.0
+
+
+# need to create new text file in the same directory as IDLE shell
+# new file called myModule.py
+# now inside myModule.py we write a basic function
+
+def myFunc(x):
+    return x + 5
+
+import math
+import myModule
+print(myModule.myFunc(6))	# 11	so we created new file inside same directory
+					called and the function and get the output
+
+def myFunc(x):
+    return x + 5
+
+def anotherFunc(x):
+    return x // 5
+
+print(myModule.anotherFunc(100))	# 20	so we created another function and called it
+					# for larger programs, example flight simulator, keep all physics
