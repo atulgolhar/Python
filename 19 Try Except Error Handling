@@ -1,0 +1,20 @@
+				# username constraint = only can be numbers (for example)
+text = input('Username: ')	# want to validate the username, could use if elseif nest statements but gets messy
+				
+number = int(text)		# create new variable number, and we want to int the text, and print to screen
+
+
+text = input('Username: ')	# so far we have, run this f5, gives error
+number = int(text)
+print(number)			# ValueError: invalid literal for int() with base 10: 'asdflkasjdf'
+				# thus not able to convert our input into a number
+				# so here we use a try except block
+				# b/c if user types something invalid, then we want user to type something else
+				# dont want program to crash like it just did
+
+				# so add try: and indent next two lines
+text = input('Username: ')
+try: 				# so we try this block of code
+    number = int(text)		# so we try this block of code
+    print(number)		# so we try this block of code
+except:				# then type except:		(note could do this in advanced way accepting specific type of error)
