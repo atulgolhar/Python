@@ -15,6 +15,17 @@ print(number)			# ValueError: invalid literal for int() with base 10: 'asdflkasj
 				# so add try: and indent next two lines
 text = input('Username: ')
 try: 				# so we try this block of code
-    number = int(text)		# so we try this block of code
-    print(number)		# so we try this block of code
-except:				# then type except:		(note could do this in advanced way accepting specific type of error)
+    number = int(text)		# so we try this block of code, ingest text, turn into integer
+    print(number)		# so we try this block of code, print text
+except:				# if error this runs		(note could do this in advanced way accepting SPECIFIC type of error)
+    print('Invalid Username')
+
+
+# better version
+
+text = input('Username: ')
+try: 
+    number = int(text)
+    print(number)
+except:
+    print('Invalid Username: must be integers')
