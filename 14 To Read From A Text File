@@ -1,3 +1,27 @@
+# Summary view
+
+file = open('file.txt', 'r')
+f = file.readlines()
+
+newList = []
+for line in f:
+    newList.append(line.strip())
+
+print(newList)
+
+
+
+
+
+
+
+# ===============================================
+
+# Longer notes view
+
+
+
+
 # need to save text file in same directory folder as script
 # path joining 
 
