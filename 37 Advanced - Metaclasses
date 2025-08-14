@@ -1,1 +1,8 @@
-# tbd
+class Foo:
+    def show(self):
+        print("hi")
+
+Test = type('Test', (Foo, ), {"x":5})
+t = Test()
+t.wy = "hello"
+t.show()
